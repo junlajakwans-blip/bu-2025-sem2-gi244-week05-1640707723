@@ -26,5 +26,6 @@ public class SpawnManager : MonoBehaviour
             spawnPos,
             animalPrefabs[animalIndex].transform.rotation
         );
+
     }
 }
