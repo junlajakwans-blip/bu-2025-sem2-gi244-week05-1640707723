@@ -46,12 +46,12 @@ public class WaveController : MonoBehaviour
        //     animalPrefabs[animalIndex].transform.rotation
        // );
 
-       int enemyIndex = Random.Range(0,currentWave.enemyPrefabs.Length);
-       int spawnPointIndex = Random.Range(0, spawnPoint.Length);
+        int enemyIndex = Random.Range(0, currentWave.enemyPrefabs.Length);
+        int spawnPointIndex = Random.Range(0, spawnPoints.Length);
         Instantiate(
             currentWave.enemyPrefabs[enemyIndex],
             spawnPoints[spawnPointIndex].position,
-            currentWave.enemyPrefabs[enemyIndex].tranform.rotation
+            currentWave.enemyPrefabs[enemyIndex].transform.rotation
         );
     }
 }
